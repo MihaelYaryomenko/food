@@ -10,11 +10,6 @@
   vertical-align: baseline;
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
 #main-header {
   display: flex;
   flex-direction: row;
@@ -32,6 +27,9 @@ ul {
 }
 
 #main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #1e1b1b;
   height: 93vh;
 }
@@ -136,4 +134,50 @@ ul {
   right: 15px;
   width: 10px;
   height: 10px;
+}
+
+#right-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 100%;
+}
+
+#list-container {
+  margin: 0px 50px 50px 0px;
+  width: 400px;
+  height: 250px;
+  border-radius: 13px;
+  -webkit-box-shadow: 5px 5px 3px 0px rgba(14, 14, 14, 0.5);
+  -moz-box-shadow: 5px 5px 3px 0px rgba(14, 14, 14, 0.5);
+  box-shadow: 5px 5px 3px 0px rgba(14, 14, 14, 0.5);
+  background-color: #0e0e0e;
+}
+
+.main-right-list-item {
+  margin: 12px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+#right-main-list {
+  margin: 0px 0px 0px 20px;
+}
+
+#list-container-paragraph {
+  margin: 30px 25px 35px 20px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+#svg-line,
+#svg-smiley {
+  position: absolute;
+  #svg-line {
+    width: 0.1rem;
+  }
+  #svg-smiley {
+    width: 25px;
+  }
 }
