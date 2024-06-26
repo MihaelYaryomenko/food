@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import RouteButton from './components/RouteButton'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header id="main-header">
+        <div id="logo-container">
+          <p id="logo-text">SOON</p>
+          <img id="logo" src="logo.svg" alt="logo" />
+        </div>
+        <div id="route-container">
+          <RouteButton text={'Новосибирск'} />
+          <RouteButton text={'Меню'} />
+          <RouteButton text={'Ресторан'} />
+          <RouteButton text={'Акции'} />
+        </div>
+        <div id="account-container">
+          <img src="user.svg" alt="" />
+        </div>
       </header>
-    </div>
-  );
+      <div id="main-container"></div>
+    </>
+  )
 }
 
-export default App;
+export default App
