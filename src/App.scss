@@ -145,6 +145,7 @@
 }
 
 #list-container {
+  position: relative;
   margin: 0px 50px 50px 0px;
   width: 400px;
   height: 250px;
@@ -174,10 +175,17 @@
 #svg-line,
 #svg-smiley {
   position: absolute;
-  #svg-line {
-    width: 0.1rem;
-  }
-  #svg-smiley {
-    width: 25px;
-  }
+  z-index: 2;
+}
+
+#svg-line {
+  bottom: 20px;
+  right: 250px;
+  width: 0.1rem;
+}
+
+#svg-smiley {
+  top: 20px;
+  right: 40px;
+  width: 25px;
 }
